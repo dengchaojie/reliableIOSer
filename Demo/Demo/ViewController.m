@@ -7,16 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "DCJUser.h"
 
-typedef NS_ENUM(NSUInteger, DCJSex) {
-    DCJSexMan,
-    DCJSexWoman,
-};
 
-typedef enum : NSUInteger {
-    CYLSexMan,
-    CYLSexWoman,
-} CYLSex;
 
 @interface ViewController ()
 
@@ -27,6 +20,21 @@ typedef enum : NSUInteger {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    DCJUser *friend = [[DCJUser alloc] initWithName:@"lpj" age:20 sex:(DCJSexMan)];
+    
+    
+    DCJUser *user = [[DCJUser alloc] initWithName:@"dcj" age:18 sex:(DCJSexMan)];
+    
+    DCJUser *copy = [user copy];
+    [copy printNumbelOfFriends];
+    
+    [user addFriend:friend];
+    
+    DCJUser *copy2 = [user copy];
+    [copy2 printNumbelOfFriends];
+
+//    NSLog(copy.)
+    
 }
 
 

@@ -7,35 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C175A83B240A6D2800BECF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A83A240A6D2800BECF34 /* AppDelegate.m */; };
-		C175A83E240A6D2800BECF34 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A83D240A6D2800BECF34 /* SceneDelegate.m */; };
-		C175A841240A6D2800BECF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A840240A6D2800BECF34 /* ViewController.m */; };
-		C175A844240A6D2800BECF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C175A842240A6D2800BECF34 /* Main.storyboard */; };
-		C175A846240A6D3000BECF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C175A845240A6D3000BECF34 /* Assets.xcassets */; };
-		C175A849240A6D3000BECF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C175A847240A6D3000BECF34 /* LaunchScreen.storyboard */; };
-		C175A84C240A6D3000BECF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A84B240A6D3000BECF34 /* main.m */; };
-		C175A854240B476D00BECF34 /* DCJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A853240B476D00BECF34 /* DCJUser.m */; };
+		C175A909240BFF0600BECF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A908240BFF0600BECF34 /* AppDelegate.m */; };
+		C175A90C240BFF0600BECF34 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A90B240BFF0600BECF34 /* SceneDelegate.m */; };
+		C175A90F240BFF0600BECF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A90E240BFF0600BECF34 /* ViewController.m */; };
+		C175A912240BFF0600BECF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C175A910240BFF0600BECF34 /* Main.storyboard */; };
+		C175A914240BFF0900BECF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C175A913240BFF0900BECF34 /* Assets.xcassets */; };
+		C175A917240BFF0900BECF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C175A915240BFF0900BECF34 /* LaunchScreen.storyboard */; };
+		C175A91A240BFF0900BECF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C175A919240BFF0900BECF34 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C175A836240A6D2800BECF34 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C175A839240A6D2800BECF34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C175A83A240A6D2800BECF34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C175A83C240A6D2800BECF34 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C175A83D240A6D2800BECF34 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		C175A83F240A6D2800BECF34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C175A840240A6D2800BECF34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C175A843240A6D2800BECF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C175A845240A6D3000BECF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C175A848240A6D3000BECF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C175A84A240A6D3000BECF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C175A84B240A6D3000BECF34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C175A852240B476D00BECF34 /* DCJUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCJUser.h; sourceTree = "<group>"; };
-		C175A853240B476D00BECF34 /* DCJUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCJUser.m; sourceTree = "<group>"; };
+		C175A904240BFF0600BECF34 /* KVODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C175A907240BFF0600BECF34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C175A908240BFF0600BECF34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C175A90A240BFF0600BECF34 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C175A90B240BFF0600BECF34 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C175A90D240BFF0600BECF34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C175A90E240BFF0600BECF34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C175A911240BFF0600BECF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C175A913240BFF0900BECF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C175A916240BFF0900BECF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C175A918240BFF0900BECF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C175A919240BFF0900BECF34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C175A833240A6D2800BECF34 /* Frameworks */ = {
+		C175A901240BFF0600BECF34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,77 +42,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C175A82D240A6D2800BECF34 = {
+		C175A8FB240BFF0600BECF34 = {
 			isa = PBXGroup;
 			children = (
-				C175A838240A6D2800BECF34 /* Demo */,
-				C175A837240A6D2800BECF34 /* Products */,
+				C175A906240BFF0600BECF34 /* KVODemo */,
+				C175A905240BFF0600BECF34 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C175A837240A6D2800BECF34 /* Products */ = {
+		C175A905240BFF0600BECF34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C175A836240A6D2800BECF34 /* Demo.app */,
+				C175A904240BFF0600BECF34 /* KVODemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C175A838240A6D2800BECF34 /* Demo */ = {
+		C175A906240BFF0600BECF34 /* KVODemo */ = {
 			isa = PBXGroup;
 			children = (
-				C175A839240A6D2800BECF34 /* AppDelegate.h */,
-				C175A83A240A6D2800BECF34 /* AppDelegate.m */,
-				C175A83C240A6D2800BECF34 /* SceneDelegate.h */,
-				C175A83D240A6D2800BECF34 /* SceneDelegate.m */,
-				C175A83F240A6D2800BECF34 /* ViewController.h */,
-				C175A840240A6D2800BECF34 /* ViewController.m */,
-				C175A842240A6D2800BECF34 /* Main.storyboard */,
-				C175A845240A6D3000BECF34 /* Assets.xcassets */,
-				C175A847240A6D3000BECF34 /* LaunchScreen.storyboard */,
-				C175A84A240A6D3000BECF34 /* Info.plist */,
-				C175A84B240A6D3000BECF34 /* main.m */,
-				C175A852240B476D00BECF34 /* DCJUser.h */,
-				C175A853240B476D00BECF34 /* DCJUser.m */,
+				C175A907240BFF0600BECF34 /* AppDelegate.h */,
+				C175A908240BFF0600BECF34 /* AppDelegate.m */,
+				C175A90A240BFF0600BECF34 /* SceneDelegate.h */,
+				C175A90B240BFF0600BECF34 /* SceneDelegate.m */,
+				C175A90D240BFF0600BECF34 /* ViewController.h */,
+				C175A90E240BFF0600BECF34 /* ViewController.m */,
+				C175A910240BFF0600BECF34 /* Main.storyboard */,
+				C175A913240BFF0900BECF34 /* Assets.xcassets */,
+				C175A915240BFF0900BECF34 /* LaunchScreen.storyboard */,
+				C175A918240BFF0900BECF34 /* Info.plist */,
+				C175A919240BFF0900BECF34 /* main.m */,
 			);
-			path = Demo;
+			path = KVODemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C175A835240A6D2800BECF34 /* Demo */ = {
+		C175A903240BFF0600BECF34 /* KVODemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C175A84F240A6D3000BECF34 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildConfigurationList = C175A91D240BFF0900BECF34 /* Build configuration list for PBXNativeTarget "KVODemo" */;
 			buildPhases = (
-				C175A832240A6D2800BECF34 /* Sources */,
-				C175A833240A6D2800BECF34 /* Frameworks */,
-				C175A834240A6D2800BECF34 /* Resources */,
+				C175A900240BFF0600BECF34 /* Sources */,
+				C175A901240BFF0600BECF34 /* Frameworks */,
+				C175A902240BFF0600BECF34 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Demo;
-			productName = Demo;
-			productReference = C175A836240A6D2800BECF34 /* Demo.app */;
+			name = KVODemo;
+			productName = KVODemo;
+			productReference = C175A904240BFF0600BECF34 /* KVODemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C175A82E240A6D2800BECF34 /* Project object */ = {
+		C175A8FC240BFF0600BECF34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "chao jie deng";
 				TargetAttributes = {
-					C175A835240A6D2800BECF34 = {
+					C175A903240BFF0600BECF34 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = C175A831240A6D2800BECF34 /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = C175A8FF240BFF0600BECF34 /* Build configuration list for PBXProject "KVODemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,57 +118,56 @@
 				en,
 				Base,
 			);
-			mainGroup = C175A82D240A6D2800BECF34;
-			productRefGroup = C175A837240A6D2800BECF34 /* Products */;
+			mainGroup = C175A8FB240BFF0600BECF34;
+			productRefGroup = C175A905240BFF0600BECF34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C175A835240A6D2800BECF34 /* Demo */,
+				C175A903240BFF0600BECF34 /* KVODemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C175A834240A6D2800BECF34 /* Resources */ = {
+		C175A902240BFF0600BECF34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C175A849240A6D3000BECF34 /* LaunchScreen.storyboard in Resources */,
-				C175A846240A6D3000BECF34 /* Assets.xcassets in Resources */,
-				C175A844240A6D2800BECF34 /* Main.storyboard in Resources */,
+				C175A917240BFF0900BECF34 /* LaunchScreen.storyboard in Resources */,
+				C175A914240BFF0900BECF34 /* Assets.xcassets in Resources */,
+				C175A912240BFF0600BECF34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C175A832240A6D2800BECF34 /* Sources */ = {
+		C175A900240BFF0600BECF34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C175A841240A6D2800BECF34 /* ViewController.m in Sources */,
-				C175A83B240A6D2800BECF34 /* AppDelegate.m in Sources */,
-				C175A84C240A6D3000BECF34 /* main.m in Sources */,
-				C175A854240B476D00BECF34 /* DCJUser.m in Sources */,
-				C175A83E240A6D2800BECF34 /* SceneDelegate.m in Sources */,
+				C175A90F240BFF0600BECF34 /* ViewController.m in Sources */,
+				C175A909240BFF0600BECF34 /* AppDelegate.m in Sources */,
+				C175A91A240BFF0900BECF34 /* main.m in Sources */,
+				C175A90C240BFF0600BECF34 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C175A842240A6D2800BECF34 /* Main.storyboard */ = {
+		C175A910240BFF0600BECF34 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C175A843240A6D2800BECF34 /* Base */,
+				C175A911240BFF0600BECF34 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C175A847240A6D3000BECF34 /* LaunchScreen.storyboard */ = {
+		C175A915240BFF0900BECF34 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C175A848240A6D3000BECF34 /* Base */,
+				C175A916240BFF0900BECF34 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +175,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C175A84D240A6D3000BECF34 /* Debug */ = {
+		C175A91B240BFF0900BECF34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		C175A84E240A6D3000BECF34 /* Release */ = {
+		C175A91C240BFF0900BECF34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,33 +285,33 @@
 			};
 			name = Release;
 		};
-		C175A850240A6D3000BECF34 /* Debug */ = {
+		C175A91E240BFF0900BECF34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = KVODemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcj.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcj.KVODemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C175A851240A6D3000BECF34 /* Release */ = {
+		C175A91F240BFF0900BECF34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = KVODemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcj.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcj.KVODemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C175A831240A6D2800BECF34 /* Build configuration list for PBXProject "Demo" */ = {
+		C175A8FF240BFF0600BECF34 /* Build configuration list for PBXProject "KVODemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C175A84D240A6D3000BECF34 /* Debug */,
-				C175A84E240A6D3000BECF34 /* Release */,
+				C175A91B240BFF0900BECF34 /* Debug */,
+				C175A91C240BFF0900BECF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C175A84F240A6D3000BECF34 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+		C175A91D240BFF0900BECF34 /* Build configuration list for PBXNativeTarget "KVODemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C175A850240A6D3000BECF34 /* Debug */,
-				C175A851240A6D3000BECF34 /* Release */,
+				C175A91E240BFF0900BECF34 /* Debug */,
+				C175A91F240BFF0900BECF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C175A82E240A6D2800BECF34 /* Project object */;
+	rootObject = C175A8FC240BFF0600BECF34 /* Project object */;
 }

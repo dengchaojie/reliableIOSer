@@ -11,12 +11,22 @@
 
 #import <Foundation/Foundation.h>
 
+
+@protocol DCJProtocol <NSObject>
+
+- (void)someMethod;
+
+@end
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (DCJ)
 
 
 @property (nonatomic, copy) NSString *myContext;
+
+@property (nonatomic, weak) id<DCJProtocol> delegate;
 
 @end
 

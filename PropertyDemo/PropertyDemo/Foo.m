@@ -11,6 +11,10 @@
 @interface Foo ()
 
 @property (nonatomic, copy) NSString *title;
+
+@property (nonatomic, copy) NSString *dcj;
+@property (nonatomic, copy) NSString *_dcj;
+
 @end
 
 @implementation Foo

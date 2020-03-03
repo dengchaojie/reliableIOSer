@@ -23,4 +23,14 @@
     return objc_getAssociatedObject(self, "myContextKey");
 }
 
+- (void)setDelegate:(NSString *)delegate {
+    
+    objc_setAssociatedObject(self, "delegateKey", delegate, OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (NSString *)delegate {
+    
+    return objc_getAssociatedObject(self, "delegateKey");
+}
+
 @end

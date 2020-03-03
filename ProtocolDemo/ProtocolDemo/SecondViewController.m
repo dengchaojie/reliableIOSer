@@ -13,23 +13,34 @@
 @end
 
 @implementation SecondViewController
+//@synthesize delegateDcj = _delegateDcj;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _delegate.msg = @"xuji";
+    _delegateDcj.msg = @"xuji";
 
     
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (_delegate) {
-        _delegate.msg = @"lpj";
-        [_delegate sendMsgToViewController:_delegate.msg];
+    if (_delegateDcj) {
+        _delegateDcj.msg = @"lpj";
+        [_delegateDcj sendMsgToViewController:_delegateDcj.msg];
     }
     
     [self dismissViewControllerAnimated:true completion:nil];
 }
+
+//
+//- (id<SecondVCProtocol>)delegateDcj {
+//    return _delegateDcj;
+//}
+//
+//- (void)setDelegateDcj:(id<SecondVCProtocol>)delegateDcj {
+//
+//}
+
 
 /*
 #pragma mark - Navigation

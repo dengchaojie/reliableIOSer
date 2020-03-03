@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SecondViewController : UIViewController
 
 
-@property (nonatomic, weak) id<SecondVCProtocol> delegate;
+@property (nonatomic, weak) id<SecondVCProtocol> delegateDcj;
 @end
 
 NS_ASSUME_NONNULL_END

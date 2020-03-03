@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ThreadAliveForEver.h"
 
 @interface ViewController ()
 
@@ -18,34 +19,90 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    __weak __typeof__(self) weakSelf = self;
-    __typeof__(self) strongSelf = weakSelf;
+//    __weak __typeof__(self) weakSelf = self;
+//    __typeof__(self) strongSelf = weakSelf;
     NSLog(@"currentRunLoop == %p", [NSRunLoop currentRunLoop]);
     NSLog(@"mainRunLoop == %p", [NSRunLoop mainRunLoop]);
-
-    NSRunLoop *runL = [[NSRunLoop alloc] init];
-    NSLog(@"runL == %@", runL);
-    [runL run];
+//
+//    NSRunLoop *runL = [[NSRunLoop alloc] init];
+//    NSLog(@"runL == %@", runL);
+//    [runL run];
+//
+//
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//
+//        NSLog(@"currentRunLoop dispatch_get_global_queue == %p", [NSRunLoop currentRunLoop]);
+//
+//    });
     
-//    [NSTimer sche]
+//    NSTimer *timer = [[NSTimer alloc] initWithFireDate:NSDate.now interval:3 repeats:true block:^(NSTimer * _Nonnull timer) {
+//        NSLog(@"%@", NSDate.now);
+//    }];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:(NSRunLoopCommonModes)];
+    
+//    UIScrollView *scro = UIScrollView.new;
+//    scro.frame = self.view.bounds;
+//    [self.view addSubview:scro];
+//    scro.contentSize = CGSizeMake(self.view.bounds.size.width, 2*self.view.bounds.size.height);//CGRectMake(0, 0, self.view.bounds.size.width, 2*self.view.bounds.size.height);
+//    scro.backgroundColor = UIColor.purpleColor;
+    
+    NSLog(@"thr == %@",[NSThread currentThread]);
+
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        NSLog(@"currentRunLoop dispatch_get_global_queue == %p", [NSRunLoop currentRunLoop]);
-
+        [self subThreadAction];
     });
+//
+}
+
+- (void)testThreadAliveForEver {
+    [self someMethod2];
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self performSelector:@selector(subThreadAction) onThread:[ThreadAliveForEver alived] withObject:[NSDate now] waitUntilDone:NO];
+}
+
+/**
+ 子线程任务
+ */
+- (void)subThreadAction
+{
+    NSLog(@"启动RunLoop后--%@",[NSRunLoop currentRunLoop].currentMode);
+    NSLog(@"%@----子线程任务开始",[NSThread currentThread]);
+
+
+    for (int i=0; i<10; i++)
+    {
+        [NSThread sleepForTimeInterval:1.0];
+        NSLog(@"----子线程任务 %ld",(long)i);
+    }
+    NSLog(@"%@----子线程任务结束",[NSThread currentThread]);
+}
+
+
+- (void)someMethod {
+    NSLog(@"someMethod");
+    NSThread *cos = [ThreadAliveForEver alived];
+    NSLog(@"cos == %@",cos);
     
-    NSTimer *timer = [[NSTimer alloc] initWithFireDate:NSDate.now interval:3 repeats:true block:^(NSTimer * _Nonnull timer) {
-        NSLog(@"%@", NSDate.now);
-    }];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:(NSRunLoopCommonModes)];
-    
-    UIScrollView *scro = UIScrollView.new;
-    scro.frame = self.view.bounds;
-    [self.view addSubview:scro];
-    scro.contentSize = CGSizeMake(self.view.bounds.size.width, 2*self.view.bounds.size.height);//CGRectMake(0, 0, self.view.bounds.size.width, 2*self.view.bounds.size.height);
-    scro.backgroundColor = UIColor.purpleColor;
+    NSLog(@"thr == %@",[NSThread currentThread]);
+}
+
+- (void)someMethod2 {
+    NSLog(@"someMethod2");
+    NSThread *cos = [ThreadAliveForEver alived];
+    NSLog(@"cos == %@",cos);
+
+    NSLog(@"currentThread == %@",[NSThread currentThread]);
     
 }
+
+//————————————————
+//版权声明：本文为CSDN博主「GabrielxPanda」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+//原文链接：https://blog.csdn.net/nathan1987_/article/details/78470639
 
 /*
  currentRunLoop == <CFRunLoop 0x600002264100 [0x7fff80617cb0]>{wakeup port = 0x1a07, stopped = false, ignoreWakeUps = false,

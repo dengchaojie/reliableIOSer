@@ -7,6 +7,13 @@
 //
 
 #import "DengPerson.h"
+#import "NSObject+DCJ.h"
+
+
+@interface DengPerson ()
+
+
+@end
 
 @implementation DengPerson
 @synthesize lastname = _lastname;
@@ -21,6 +28,12 @@
 
 - (NSString *)lastname {
     return super.lastname;
+}
+
+- (void)dealloc {
+    if (self.delegate) {
+        [self.delegate someMethod];
+    }
 }
 
 @end

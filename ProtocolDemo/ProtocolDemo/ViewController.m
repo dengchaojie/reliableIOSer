@@ -26,9 +26,9 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     SecondViewController *vc = SecondViewController.new;
-    vc.delegate = self;
+    vc.delegateDcj = self;
     [self presentViewController:vc animated:true completion:^{
-        NSLog(@"%@", vc.delegate.msg);
+        NSLog(@"%@", vc.delegateDcj.msg);
     }];
 }
 

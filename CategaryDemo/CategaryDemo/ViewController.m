@@ -11,7 +11,7 @@
 #import "DengPerson.h"
 
 
-@interface ViewController ()
+@interface ViewController () <DCJProtocol>
 
 @end
 
@@ -22,17 +22,25 @@
     // Do any additional setup after loading the view.
     self.myContext = @"#import";
     
+    
+    
     DengPerson *deng = DengPerson.new;
     deng.lastname = @"邓";
     NSLog(@"%@",deng.lastname);
+    
+    deng.delegate = self;
 }
+
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"%@", self.myContext);
 }
 
+- (void)someMethod {
+    NSLog(@"someMethod");
 
+}
 
 //- (void)setMyContext:(NSString *)myContext {
 //

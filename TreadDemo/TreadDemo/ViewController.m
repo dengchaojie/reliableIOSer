@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DCJOperationQueue.h"
+
 
 @interface ViewController ()
 
@@ -31,25 +33,27 @@
 //
 //
 //    }];
-//    都未找到比较好的休眠方式。故自己使用NSCondition实现了一个。
-//    NSOperation
     
-//    https://blog.csdn.net/afunx/article/details/48492391
-    __block NSThread *thr = [NSThread currentThread];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [NSThread sleepForTimeInterval:10];
-        
-        NSLog(@"cancel");
-        [thr cancel];
-    });
+    // 在主队列，异步执行，不会开启新的线程。
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        NSLog(@"currentThread 1 %@---sleep start", [NSThread currentThread]);
+//
+//    });
+    [DCJOperationQueue doSomething];
     
-    NSLog(@"Sleep start");
-    // 休眠3s
-    [NSThread sleepForTimeInterval:6.0];
-    NSLog(@"Sleep stop");
-
-    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 3;
+    NSInvocationOperation *myInvocationOperation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(actionInvocationOperation:) object:@"InvocationOperation"];
+    [queue addOperation:myInvocationOperation];
 }
+
+
+- (void)actionInvocationOperation:(id)obj {
+    NSLog(@"NSInvocationOperation 4 %@, obj == %@", [NSThread currentThread],obj);
+
+}
+
+
 
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    NSLog(@"self.myThread == %@", self.myThread);

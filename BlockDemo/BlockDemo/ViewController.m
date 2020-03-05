@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
+
+
 
 typedef void(^myBlock)(void);
 @interface ViewController ()
@@ -14,6 +17,9 @@ typedef void(^myBlock)(void);
 @end
 
 @implementation ViewController
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,6 +56,13 @@ typedef void(^myBlock)(void);
     NSLog(@"堆中地址%p--栈中地址%p",a , &a);
     NSLog(@"%@",a);
 
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    SecondViewController *vc = SecondViewController.new;
+    [self presentViewController:vc animated:true completion:nil];
+    
 }
 
 //- (BOOL)respondsToSelector:(SEL)aSelector {

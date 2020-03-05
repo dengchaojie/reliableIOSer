@@ -22,7 +22,7 @@
 //    __weak __typeof__(self) weakSelf = self;
 //    __typeof__(self) strongSelf = weakSelf;
     NSLog(@"currentRunLoop == %p", [NSRunLoop currentRunLoop]);
-    NSLog(@"mainRunLoop == %p", [NSRunLoop mainRunLoop]);
+//    NSLog(@"mainRunLoop == %p", [NSRunLoop mainRunLoop]);
 //
 //    NSRunLoop *runL = [[NSRunLoop alloc] init];
 //    NSLog(@"runL == %@", runL);
@@ -49,10 +49,25 @@
     NSLog(@"thr == %@",[NSThread currentThread]);
 
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self subThreadAction];
-    });
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        [self subThreadAction];
+//    });
 //
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSThread *thr = [NSThread currentThread];
+        NSLog(@"dispatch_async thr == %@",[NSThread currentThread]);
+
+        [self performSelector:@selector(actionOnThread) onThread:thr withObject:@"dcj" waitUntilDone:true];
+    });
+    
+}
+
+- (void)actionOnThread {
+    NSLog(@"actionOnThread currentRunLoop == %@", [NSRunLoop currentRunLoop]);
+
+    NSLog(@"actionOnThread thr == %@",[NSThread currentThread]);
+    
+
 }
 
 - (void)testThreadAliveForEver {
@@ -89,6 +104,8 @@
     NSLog(@"cos == %@",cos);
     
     NSLog(@"thr == %@",[NSThread currentThread]);
+    
+    [NSRunLoop mainRunLoop];
 }
 
 - (void)someMethod2 {

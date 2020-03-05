@@ -14,6 +14,9 @@
 		C1E86340240DEB2B000E4B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E8633F240DEB2B000E4B11 /* Assets.xcassets */; };
 		C1E86343240DEB2B000E4B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E86341240DEB2B000E4B11 /* LaunchScreen.storyboard */; };
 		C1E86346240DEB2B000E4B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E86345240DEB2B000E4B11 /* main.m */; };
+		C1FB0C1024109A57000AEE80 /* DCJConcrete.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FB0C0F24109A57000AEE80 /* DCJConcrete.m */; };
+		C1FB0C1324109BF1000AEE80 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FB0C1224109BF1000AEE80 /* SecondViewController.m */; };
+		C1FB0C1624109FA7000AEE80 /* DCJConcreteGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FB0C1524109FA7000AEE80 /* DCJConcreteGlobal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		C1E86342240DEB2B000E4B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1E86344240DEB2B000E4B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1E86345240DEB2B000E4B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1FB0C0E24109A57000AEE80 /* DCJConcrete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCJConcrete.h; sourceTree = "<group>"; };
+		C1FB0C0F24109A57000AEE80 /* DCJConcrete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCJConcrete.m; sourceTree = "<group>"; };
+		C1FB0C1124109BF1000AEE80 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C1FB0C1224109BF1000AEE80 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C1FB0C1424109FA7000AEE80 /* DCJConcreteGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCJConcreteGlobal.h; sourceTree = "<group>"; };
+		C1FB0C1524109FA7000AEE80 /* DCJConcreteGlobal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCJConcreteGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,12 @@
 				C1E86341240DEB2B000E4B11 /* LaunchScreen.storyboard */,
 				C1E86344240DEB2B000E4B11 /* Info.plist */,
 				C1E86345240DEB2B000E4B11 /* main.m */,
+				C1FB0C0E24109A57000AEE80 /* DCJConcrete.h */,
+				C1FB0C0F24109A57000AEE80 /* DCJConcrete.m */,
+				C1FB0C1124109BF1000AEE80 /* SecondViewController.h */,
+				C1FB0C1224109BF1000AEE80 /* SecondViewController.m */,
+				C1FB0C1424109FA7000AEE80 /* DCJConcreteGlobal.h */,
+				C1FB0C1524109FA7000AEE80 /* DCJConcreteGlobal.m */,
 			);
 			path = BlockDemo;
 			sourceTree = "<group>";
@@ -146,7 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FB0C1324109BF1000AEE80 /* SecondViewController.m in Sources */,
 				C1E8633B240DEB28000E4B11 /* ViewController.m in Sources */,
+				C1FB0C1624109FA7000AEE80 /* DCJConcreteGlobal.m in Sources */,
+				C1FB0C1024109A57000AEE80 /* DCJConcrete.m in Sources */,
 				C1E86335240DEB28000E4B11 /* AppDelegate.m in Sources */,
 				C1E86346240DEB2B000E4B11 /* main.m in Sources */,
 				C1E86338240DEB28000E4B11 /* SceneDelegate.m in Sources */,

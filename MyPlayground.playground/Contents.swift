@@ -1,6 +1,16 @@
 import UIKit
 
 
+
+let arr = [1,2,3]
+let res = arr.map { (item) -> String in
+    return "\(item)"
+}.flatMap { (str) -> [Int] in
+    return [Int(str)!]
+}
+print(res)
+
+
 class Ref<T> {
     var value: T
     init(value: T) {

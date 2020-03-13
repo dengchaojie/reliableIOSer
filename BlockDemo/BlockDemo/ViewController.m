@@ -55,7 +55,8 @@ typedef void(^myBlock)(void);
     foo();
     NSLog(@"堆中地址%p--栈中地址%p",a , &a);
     NSLog(@"%@",a);
-
+    [self.view layoutIfNeeded];
+    [self.view setNeedsLayout];
 }
 
 

@@ -25,6 +25,15 @@
 //    [DCJConcreteGlobal doSomething];
     DCJConcreteGlobal *glo = DCJConcreteGlobal.new;
     [glo doSomething2];
+    
+    UIImage *img = [UIImage imageNamed:@"kdkdk"];
+    UIImageView *imgView = UIImageView.new;
+    imgView.image = img;
+    UIButton *btn = UIButton.new;
+    [btn setBackgroundImage:img forState:(UIControlStateNormal)];
+    [btn setImage:img forState:(UIControlStateNormal)];
+    
+    
 }
 
 

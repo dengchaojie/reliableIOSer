@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSObject+DCJ.h"
 #import "DengPerson.h"
+#import "SomeView.h"
 
 
 @interface ViewController () <DCJProtocol>
@@ -22,13 +23,18 @@
     // Do any additional setup after loading the view.
     self.myContext = @"#import";
     
-    
-    
+//    NSMapTable
+//    UIApplication
     DengPerson *deng = DengPerson.new;
     deng.lastname = @"邓";
     NSLog(@"%@",deng.lastname);
     
     deng.delegate = self;
+    SomeView *sv = [[SomeView alloc] initWithFrame:(CGRectMake(100, 100, 100, 100))];
+    [self.view addSubview:sv];
+    sv.layer.cornerRadius = 20;
+    sv.backgroundColor = UIColor.blueColor;
+
 }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1CE301A241FAC910077F53F /* SomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CE3019241FAC910077F53F /* SomeView.m */; };
 		C1E86307240D1278000E4B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E86306240D1278000E4B11 /* AppDelegate.m */; };
 		C1E8630A240D1278000E4B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E86309240D1278000E4B11 /* SceneDelegate.m */; };
 		C1E8630D240D1278000E4B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E8630C240D1278000E4B11 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1CE3018241FAC910077F53F /* SomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeView.h; sourceTree = "<group>"; };
+		C1CE3019241FAC910077F53F /* SomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeView.m; sourceTree = "<group>"; };
 		C1E86302240D1278000E4B11 /* CategaryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategaryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E86305240D1278000E4B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1E86306240D1278000E4B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				C1E86322240D33C3000E4B11 /* Person.m */,
 				C1E86324240D33CF000E4B11 /* DengPerson.h */,
 				C1E86325240D33CF000E4B11 /* DengPerson.m */,
+				C1CE3018241FAC910077F53F /* SomeView.h */,
+				C1CE3019241FAC910077F53F /* SomeView.m */,
 			);
 			path = CategaryDemo;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				C1E86326240D33CF000E4B11 /* DengPerson.m in Sources */,
 				C1E8630D240D1278000E4B11 /* ViewController.m in Sources */,
 				C1E86307240D1278000E4B11 /* AppDelegate.m in Sources */,
+				C1CE301A241FAC910077F53F /* SomeView.m in Sources */,
 				C1E86320240D12D1000E4B11 /* NSObject+DCJ.m in Sources */,
 				C1E86318240D127B000E4B11 /* main.m in Sources */,
 				C1E8630A240D1278000E4B11 /* SceneDelegate.m in Sources */,

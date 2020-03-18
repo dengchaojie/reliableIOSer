@@ -10,8 +10,8 @@
 #import "NSObject+DCJ.h"
 #import "DengPerson.h"
 #import "SomeView.h"
-
-
+#import <Foundation/Foundation.h>
+#import <CoreFoundation/CoreFoundation.h>
 @interface ViewController () <DCJProtocol>
 
 @end
@@ -45,7 +45,7 @@
 
 - (void)someMethod {
     NSLog(@"someMethod");
-
+    
 }
 
 //- (void)setMyContext:(NSString *)myContext {
@@ -55,5 +55,6 @@
 //- (NSString *)myContext {
 //
 //}
+
 
 @end

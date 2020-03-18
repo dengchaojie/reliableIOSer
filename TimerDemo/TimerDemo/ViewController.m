@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,15 @@
      */
 //    NSTimer
     
+    self.view.backgroundColor = UIColor.whiteColor;
+    
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    SecondViewController *vc = SecondViewController.new;
+    [self presentViewController:vc animated:true completion:nil];
+    
+}
 
 @end

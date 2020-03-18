@@ -13,7 +13,19 @@
 
 @end
 
+
+
+
 @implementation ViewController
+// 伪代码
+//- (void)loop {
+//    initialize();
+//    do {
+//        var message = get_next_message();
+//        process_message(message);
+//    } while (message != quit);
+//
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -95,6 +107,8 @@
         NSLog(@"----子线程任务 %ld",(long)i);
     }
     NSLog(@"%@----子线程任务结束",[NSThread currentThread]);
+    
+    [[NSRunLoop currentRunLoop] addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
 }
 
 

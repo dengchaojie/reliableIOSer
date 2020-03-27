@@ -72,6 +72,15 @@
         [self performSelector:@selector(actionOnThread) onThread:thr withObject:@"dcj" waitUntilDone:true];
     });
     
+//    alpha和opaque的区别
+//    The opaque property has no effect in system-provided classes such as UIButton, UILabel, UITableViewCell, and so on.
+    self.view.backgroundColor = UIColor.whiteColor;
+    UILabel *lab = [[UILabel alloc] initWithFrame:(CGRectMake(100, 100, 100, 100))];
+    [self.view addSubview:lab];
+    lab.backgroundColor = UIColor.blueColor;
+//    lab.opaque = false;
+    lab.alpha = 0.2;
+    NSDictionary
 }
 
 - (void)actionOnThread {
@@ -79,7 +88,7 @@
 
     NSLog(@"actionOnThread thr == %@",[NSThread currentThread]);
     
-
+//    self.view.alpha = 1;
 }
 
 - (void)testThreadAliveForEver {
@@ -99,7 +108,7 @@
 {
     NSLog(@"启动RunLoop后--%@",[NSRunLoop currentRunLoop].currentMode);
     NSLog(@"%@----子线程任务开始",[NSThread currentThread]);
-
+//    UIButton--uicontrol-uiview-uiresponder-nsobject
 
     for (int i=0; i<10; i++)
     {

@@ -8,6 +8,7 @@
 
 #import "Person.h"
 
+
 @interface Person ()
 
 @property (nonatomic, strong) dispatch_queue_t conc;
@@ -25,14 +26,13 @@
     return self;
 }
 
-- (id)readDataForKey:(NSString *)key {
-    __block id result;
-    dispatch_sync(self.conc, ^{
-        NSLog(@"currentThread == %@", [NSThread currentThread]);
-        result = [self valueForKey:key];
+- (void)readDataForKey:(NSString *)key complete:(PersonComplete)comp {
+    dispatch_async(self.conc, ^{
+
+//        NSLog(@"currentThread == %@", [NSThread currentThread]);
+        comp([self valueForKey:key]);
     });
     
-    return result;
 }
 
 - (void)setData:(id)data forKey:(NSString *)key {

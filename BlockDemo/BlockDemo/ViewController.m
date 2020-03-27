@@ -13,7 +13,8 @@
 
 typedef void(^myBlock)(void);
 @interface ViewController ()
-
+@property (nonatomic, copy) dispatch_block_t myBlock;
+@property (nonatomic, copy) NSArray *blocks;
 @end
 
 @implementation ViewController
@@ -57,13 +58,45 @@ typedef void(^myBlock)(void);
     NSLog(@"%@",a);
     [self.view layoutIfNeeded];
     [self.view setNeedsLayout];
+    
+    
+    
+    void(^block2)(void) = ^(void){
+        NSLog(@"b");
+    };
+    
+    void(^block3)(void) = ^(void){
+        NSLog(@"c");
+    };
+
+    NSLog(@"%@",block3);
+
+    self.myBlock = block3;
+    NSLog(@"%@",self.myBlock);
+
+    NSArray *blocks = [NSArray arrayWithObjects:block3, nil];
+    _blocks = blocks;
+    
+    NSUInteger aaa = 123;
+//    __block NSUInteger bbb = aaa;
+    void(^block1)(void) = ^(void){
+//        bbb = 88;
+        NSLog(@"%lu",aaa);
+    };
+    NSLog(@"block1  %@",block1);
+
+    self.myBlock = block1;
+    NSLog(@"myBlock 2  %@",self.myBlock);
 }
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    SecondViewController *vc = SecondViewController.new;
-    [self presentViewController:vc animated:true completion:nil];
-    
+//    SecondViewController *vc = SecondViewController.new;
+//    [self presentViewController:vc animated:true completion:nil];
+    void(^last)(void) = self.blocks.lastObject;
+    NSLog(@"%@",last);
+
+    last();
 }
 
 //- (BOOL)respondsToSelector:(SEL)aSelector {

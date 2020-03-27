@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1646BB42428EB9700C763B5 /* SomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1646BB32428EB9700C763B5 /* SomeView.m */; };
 		C1E86385240F3AD3000E4B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E86384240F3AD3000E4B11 /* AppDelegate.m */; };
 		C1E86388240F3AD3000E4B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E86387240F3AD3000E4B11 /* SceneDelegate.m */; };
 		C1E8638B240F3AD3000E4B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E8638A240F3AD3000E4B11 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1646BB22428EB9700C763B5 /* SomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeView.h; sourceTree = "<group>"; };
+		C1646BB32428EB9700C763B5 /* SomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeView.m; sourceTree = "<group>"; };
 		C1E86380240F3AD3000E4B11 /* LockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E86383240F3AD3000E4B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1E86384240F3AD3000E4B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				C1E863AF240F5A9E000E4B11 /* BarrierLock.m */,
 				C1E863B4240F7F4E000E4B11 /* AssignLock.h */,
 				C1E863B5240F7F4E000E4B11 /* AssignLock.m */,
+				C1646BB22428EB9700C763B5 /* SomeView.h */,
+				C1646BB32428EB9700C763B5 /* SomeView.m */,
 			);
 			path = LockDemo;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				C1E863A7240F5134000E4B11 /* SecondViewController.m in Sources */,
 				C1E86396240F3AD6000E4B11 /* main.m in Sources */,
 				C1E863B0240F5A9E000E4B11 /* BarrierLock.m in Sources */,
+				C1646BB42428EB9700C763B5 /* SomeView.m in Sources */,
 				C1E8639E240F3CAD000E4B11 /* DCJThread.m in Sources */,
 				C1E86388240F3AD3000E4B11 /* SceneDelegate.m in Sources */,
 				C1E863AA240F5372000E4B11 /* Semaphore4.m in Sources */,

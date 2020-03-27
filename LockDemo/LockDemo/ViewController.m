@@ -18,8 +18,16 @@
 
 @implementation ViewController
 
+- (void)updateViewConstraints {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self.view setNeedsUpdateConstraints]
+//    UIScrollView
+//    NSOperationQueue
     // Do any additional setup after loading the view.
     
     //    都未找到比较好的休眠方式。故自己使用NSCondition实现了一个。
@@ -40,19 +48,21 @@
 //    [NSThread sleepForTimeInterval:3];
 //    NSLog(@"Sleep stop");
     
-    // 在睡眠状态下，唤醒线程
-//    DCJThread *obj = DCJThread.new;
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        NSLog(@"currentThread 1 %@---sleep start", [NSThread currentThread]);
-//
-//        [obj sleep:3];
-//        [obj interrupt];
-//    });
-//    NSLog(@"currentThread 2 %@---sleep start", [NSThread currentThread]);
-//
-//    [obj sleep:6];
+    // -------在睡眠状态下，唤醒线程
+    DCJThread *obj = DCJThread.new;
+//    [obj sleep:1];
 
-    [BarrierLock doSomething];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"currentThread a ---%@---sleep start", [NSThread currentThread]);
+
+        [obj sleep:3];
+        [obj interrupt];
+    });
+    NSLog(@"currentThread b ---%@---sleep start", [NSThread currentThread]);
+
+    [obj sleep:6];
+    NSLog(@"currentThread c--%@",[NSThread currentThread]);
+//    [BarrierLock doSomething];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

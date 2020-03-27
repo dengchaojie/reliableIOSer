@@ -31,6 +31,7 @@
 
 - (BOOL)sleep:(long long)time {
     [self.conditionLock  lock];
+    NSLog(@"---sleep start---%lld", time);
     NSDate *later = [NSDate dateWithTimeIntervalSinceNow:time];
     //[self.conditionLock waitUntilDate:later]时间到了，返回no。时间没到，返回yes
     while (!self.isInterrupt && [self.conditionLock waitUntilDate:later]) {
@@ -44,7 +45,7 @@
 
 - (void)interrupt {
     [self.conditionLock lock];
-    NSLog(@"---interrupt--start");
+    NSLog(@"---interrupt--start--%@",[NSThread currentThread]);
     self.isInterrupt = YES;
     [self.conditionLock signal];
     [self.conditionLock unlock];

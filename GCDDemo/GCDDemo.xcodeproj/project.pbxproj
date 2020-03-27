@@ -16,6 +16,9 @@
 		C17349F8241BDFF400B45E28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C17349F7241BDFF400B45E28 /* main.m */; };
 		C1734A00241C6AF100B45E28 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C17349FF241C6AF100B45E28 /* Person.m */; };
 		C1734A02241C82E500B45E28 /* 1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1734A01241C82E500B45E28 /* 1@2x.jpg */; };
+		C1A317BE2425EA8C0047F61A /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A317BD2425EA8C0047F61A /* A.m */; };
+		C1A317C12425EA970047F61A /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A317C02425EA970047F61A /* B.m */; };
+		C1A317C42425EAAB0047F61A /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A317C32425EAAB0047F61A /* C.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,12 @@
 		C17349FE241C6AF100B45E28 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		C17349FF241C6AF100B45E28 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		C1734A01241C82E500B45E28 /* 1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1@2x.jpg"; sourceTree = "<group>"; };
+		C1A317BC2425EA8C0047F61A /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		C1A317BD2425EA8C0047F61A /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		C1A317BF2425EA970047F61A /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
+		C1A317C02425EA970047F61A /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
+		C1A317C22425EAAB0047F61A /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
+		C1A317C32425EAAB0047F61A /* C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,12 @@
 				C17349F7241BDFF400B45E28 /* main.m */,
 				C17349FE241C6AF100B45E28 /* Person.h */,
 				C17349FF241C6AF100B45E28 /* Person.m */,
+				C1A317BC2425EA8C0047F61A /* A.h */,
+				C1A317BD2425EA8C0047F61A /* A.m */,
+				C1A317BF2425EA970047F61A /* B.h */,
+				C1A317C02425EA970047F61A /* B.m */,
+				C1A317C22425EAAB0047F61A /* C.h */,
+				C1A317C32425EAAB0047F61A /* C.m */,
 			);
 			path = GCDDemo;
 			sourceTree = "<group>";
@@ -156,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17349ED241BDFF200B45E28 /* ViewController.m in Sources */,
+				C1A317C42425EAAB0047F61A /* C.m in Sources */,
 				C17349E7241BDFF200B45E28 /* AppDelegate.m in Sources */,
 				C1734A00241C6AF100B45E28 /* Person.m in Sources */,
+				C1A317C12425EA970047F61A /* B.m in Sources */,
+				C1A317BE2425EA8C0047F61A /* A.m in Sources */,
 				C17349F8241BDFF400B45E28 /* main.m in Sources */,
 				C17349EA241BDFF200B45E28 /* SceneDelegate.m in Sources */,
 			);

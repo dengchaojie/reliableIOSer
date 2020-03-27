@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "MyView.h"
+#import "MyScrollView.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>
 
 @end
 
@@ -28,8 +29,12 @@
     MyView *myV = [[MyView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:myV];
     
-
+    MyScrollView *scr = MyScrollView.new;
+    scr.delegate = self;
+    self.hidesBottomBarWhenPushed = YES;
 }
+
+//- sc
 
 //- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event;
 //// 若上述方法返回YES,则向当前视图的所有子视图(subviews)发送下面该事件，直到有子视图返回非空对象或者全部子视图遍历完毕

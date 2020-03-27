@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^PersonComplete)(NSString *_Nullable value);
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
 
 @property (nonatomic, copy) NSString *name;
 
-- (id)readDataForKey:(NSString *)key;
+- (void)readDataForKey:(NSString *)key complete:(PersonComplete)comp;
 - (void)setData:(id)data forKey:(NSString *)key;
 @end
 

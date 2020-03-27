@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C144042B240FB4CC001EFCA2 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = C144042A240FB4CC001EFCA2 /* NSBundle+Language.m */; };
+		C1A317C72426360D0047F61A /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A317C62426360D0047F61A /* MyScrollView.m */; };
+		C1A317CA24263CF60047F61A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A317C924263CF60047F61A /* TableViewController.m */; };
+		C1A317CD24263D900047F61A /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A317CC24263D900047F61A /* TabBarViewController.m */; };
 		C1E863C5240F8560000E4B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E863C4240F8560000E4B11 /* AppDelegate.m */; };
 		C1E863C8240F8560000E4B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E863C7240F8560000E4B11 /* SceneDelegate.m */; };
 		C1E863CB240F8560000E4B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E863CA240F8560000E4B11 /* ViewController.m */; };
@@ -22,6 +25,12 @@
 /* Begin PBXFileReference section */
 		C1440429240FB4CC001EFCA2 /* NSBundle+Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		C144042A240FB4CC001EFCA2 /* NSBundle+Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		C1A317C52426360D0047F61A /* MyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		C1A317C62426360D0047F61A /* MyScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
+		C1A317C824263CF60047F61A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C1A317C924263CF60047F61A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C1A317CB24263D900047F61A /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		C1A317CC24263D900047F61A /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		C1E863C0240F8560000E4B11 /* UIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E863C3240F8560000E4B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1E863C4240F8560000E4B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +97,12 @@
 				C1E863E9240FB0A2000E4B11 /* Localizable.strings */,
 				C1440429240FB4CC001EFCA2 /* NSBundle+Language.h */,
 				C144042A240FB4CC001EFCA2 /* NSBundle+Language.m */,
+				C1A317C52426360D0047F61A /* MyScrollView.h */,
+				C1A317C62426360D0047F61A /* MyScrollView.m */,
+				C1A317C824263CF60047F61A /* TableViewController.h */,
+				C1A317C924263CF60047F61A /* TableViewController.m */,
+				C1A317CB24263D900047F61A /* TabBarViewController.h */,
+				C1A317CC24263D900047F61A /* TabBarViewController.m */,
 			);
 			path = UIDemo;
 			sourceTree = "<group>";
@@ -164,12 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A317C72426360D0047F61A /* MyScrollView.m in Sources */,
 				C1E863CB240F8560000E4B11 /* ViewController.m in Sources */,
 				C1E863C5240F8560000E4B11 /* AppDelegate.m in Sources */,
 				C144042B240FB4CC001EFCA2 /* NSBundle+Language.m in Sources */,
 				C1E863D6240F8563000E4B11 /* main.m in Sources */,
 				C1E863C8240F8560000E4B11 /* SceneDelegate.m in Sources */,
 				C1E863DE240F8FC6000E4B11 /* MyView.m in Sources */,
+				C1A317CD24263D900047F61A /* TabBarViewController.m in Sources */,
+				C1A317CA24263CF60047F61A /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

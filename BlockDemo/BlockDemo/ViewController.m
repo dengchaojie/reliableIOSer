@@ -91,12 +91,12 @@ typedef void(^myBlock)(void);
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    SecondViewController *vc = SecondViewController.new;
-//    [self presentViewController:vc animated:true completion:nil];
-    void(^last)(void) = self.blocks.lastObject;
-    NSLog(@"%@",last);
-
-    last();
+    SecondViewController *vc = SecondViewController.new;
+    [self presentViewController:vc animated:true completion:nil];
+//    void(^last)(void) = self.blocks.lastObject;
+//    NSLog(@"%@",last);
+//
+//    last();
 }
 
 //- (BOOL)respondsToSelector:(SEL)aSelector {

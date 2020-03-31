@@ -17,7 +17,9 @@
 @end
 
 @implementation ViewController
-
+{
+    NSString *someStr;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -34,6 +36,11 @@
     [self.view addSubview:sv];
     sv.layer.cornerRadius = 20;
     sv.backgroundColor = UIColor.blueColor;
+    __weak typeof(self) wea = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        __strong typeof(self) str = wea;
+        NSLog(@"%@", str->someStr);
+    });
 
 }
 

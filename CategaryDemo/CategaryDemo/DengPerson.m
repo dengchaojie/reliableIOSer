@@ -23,11 +23,17 @@
         NSLog(@"lastname is not deng");
         return;
     }
-    super.lastname = @"邓";
+    _lastname = @"邓";
+//    Thread 1: EXC_BAD_ACCESS (code=2, address=0x7ffee8141ff8)
+//    Thread 1 Queue : com.apple.main-thread (serial)
+    static dispatch_once_t slsls;
+    dispatch_once(&slsls, ^{
+        
+    });
 }
 
 - (NSString *)lastname {
-    return super.lastname;
+    return _lastname;
 }
 
 - (void)dealloc {

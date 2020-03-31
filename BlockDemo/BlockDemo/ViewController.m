@@ -26,6 +26,8 @@ typedef void(^myBlock)(void);
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+//    arc4random();
+//    self.view.layer.contents
     __block int num = 0;
     NSLog(@"定义前：%p", &num);         //栈区
     void (^foo2)(void) = ^{
@@ -34,6 +36,7 @@ typedef void(^myBlock)(void);
     };
     NSLog(@"定义后：%p", &num);         //堆区
     foo2();
+    NSLog(@"%@",foo2);
     /*
      定义前：0x7ffeeecd3128
      定义后：0x600001566838
@@ -43,7 +46,7 @@ typedef void(^myBlock)(void);
 //    NSLog(@"%@", mutStr);
 //    mutStr.string = @"lpj";
 //    NSLog(@"%@", mutStr);
-    
+
     
 //    __block Block不允许修改外部变量的值，这里所说的外部变量的值，指的是栈中指针的内存地址。
     NSMutableString *a = [[NSMutableString alloc] initWithString:@"dcj"];

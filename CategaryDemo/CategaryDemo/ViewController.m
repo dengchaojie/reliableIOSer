@@ -12,6 +12,9 @@
 #import "SomeView.h"
 #import <Foundation/Foundation.h>
 #import <CoreFoundation/CoreFoundation.h>
+
+#import "SomeObj.h"
+
 @interface ViewController () <DCJProtocol>
 
 @end
@@ -41,7 +44,15 @@
         __strong typeof(self) str = wea;
         NSLog(@"%@", str->someStr);
     });
-
+    [SomeObj someClassMet];
+    
+    
+    NSString *str = @"lwlw";
+    NSString *copy = [str copy];
+    NSLog(@"%p--%p", str, copy);//地址一样
+    
+//    NSMutableString *mutstr = @"kkeke";
+    
 }
 
 

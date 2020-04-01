@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (DCJ)
 
-
++(void)someClassMet;
 @property (nonatomic, copy) NSString *myContext;
 
 @property (nonatomic, weak) id<DCJProtocol> delegate;

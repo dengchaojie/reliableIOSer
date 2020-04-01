@@ -33,4 +33,11 @@
     return objc_getAssociatedObject(self, "delegateKey");
 }
 
++ (void)someClassMet
+{
+//    NSInvocation
+}
+
+
+
 @end

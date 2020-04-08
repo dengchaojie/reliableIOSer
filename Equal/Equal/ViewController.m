@@ -36,7 +36,45 @@
     dict[per2] = @"gyc";
     NSLog(@"%@", dict);
     
+    
+    [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(someAction) userInfo:nil repeats:true];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:(CGRectMake(100, 100, 100, 40))];
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:(CGRectMake(100, 100, 100, 40))];
+    [self.view addSubview:btn];
+    [self.view addSubview:btn2];
+    [btn addTarget:self action:@selector(btnAction) forControlEvents:(UIControlEventTouchUpInside)];
+    [btn2 addTarget:self action:@selector(btn2Action) forControlEvents:(UIControlEventTouchUpInside)];
+    btn2.backgroundColor = UIColor.blueColor;
+    
+//    [btn canc]
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
+    
 }
 
+
+- (void)tapAction
+{
+    
+}
+
+
+- (void)btnAction
+{
+    NSLog(@"btnAction");
+}
+
+
+- (void)btn2Action
+{
+    NSLog(@"btn2Action");
+
+}
+
+
+- (void)someAction
+{
+    
+}
 
 @end

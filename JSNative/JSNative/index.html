@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="margin-top: 100px">
+<h1>UIWebView和JavaScript交互的那些事</h1>
+</div>
+<div>
+<input type="button" value="Share" onclick="callShare()">
+</div>
+
+<script>
+
+var callShare = function() {
+
+var shareInfo = JSON.stringify(
+    {"title": "标题", 
+    "desc": "内容", 
+   "shareUrl": "https://www.baidu.com",
+   "shareIco":"https://upload-images.jianshu.io/upload_images/1220329-15e7dbbeb0825197.png?imageMogr2/auto-orient/"}
+  );
+  alert("sssss");
+
+   window.webkit.messageHandlers.JSObject.postMessage({body: shareInfo});
+
+}
+
+var picCallback = function(photos) {
+   alert(photos);
+}
+</script>
+</body>
+</html>

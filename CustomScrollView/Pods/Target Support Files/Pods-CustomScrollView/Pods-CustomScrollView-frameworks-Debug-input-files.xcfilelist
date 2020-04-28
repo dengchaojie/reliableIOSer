@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-CustomScrollView/Pods-CustomScrollView-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework
+${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework

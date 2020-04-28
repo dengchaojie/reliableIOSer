@@ -1,0 +1,16 @@
+PODS:
+  - JKWKWebViewHandler (0.4.1)
+
+DEPENDENCIES:
+  - JKWKWebViewHandler
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JKWKWebViewHandler
+
+SPEC CHECKSUMS:
+  JKWKWebViewHandler: 365c2a8355c20f6e2fdaa9d6367488b7e59dd0cf
+
+PODFILE CHECKSUM: abb8828e1c0cfc020c6c0f09ca0bd1eb865668eb
+
+COCOAPODS: 1.7.5
